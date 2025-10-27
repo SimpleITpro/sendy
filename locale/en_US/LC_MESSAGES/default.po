@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sendy\n"
-"POT-Creation-Date: 2024-12-05 15:55+0800\n"
-"PO-Revision-Date: 2024-12-05 15:56+0800\n"
+"POT-Creation-Date: 2024-12-12 13:14+0800\n"
+"PO-Revision-Date: 2024-12-12 13:14+0800\n"
 "Last-Translator: Sendy <hello@sendy.co>\n"
 "Language-Team: Sendy <hello@sendy.co>\n"
 "Language: en\n"
@@ -1371,6 +1371,82 @@ msgstr ""
 
 #: autoresponders-report.php:1148 report.php:1349
 msgid "Choose an existing list"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Sunday"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Monday"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Tuesday"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Wednesday"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Thursday"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Friday"
+msgstr ""
+
+#: autoresponders.php:80 includes/create/send-now.php:183 scheduled.php:148
+msgid "Saturday"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "January"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "February"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "March"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "April"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "May"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "June"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "July"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "August"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "September"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "October"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "November"
+msgstr ""
+
+#: autoresponders.php:81 includes/create/send-now.php:184 scheduled.php:149
+msgid "December"
 msgstr ""
 
 #: blacklist-blocked-domains.php:48 blacklist-suppression.php:48
@@ -3051,82 +3127,6 @@ msgstr ""
 
 #: includes/create/send-now.php:27
 msgid "Unable to set sql_mode"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Sunday"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Monday"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Tuesday"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Wednesday"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Thursday"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Friday"
-msgstr ""
-
-#: includes/create/send-now.php:183 scheduled.php:148
-msgid "Saturday"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "January"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "February"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "March"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "April"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "May"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "June"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "July"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "August"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "September"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "October"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "November"
-msgstr ""
-
-#: includes/create/send-now.php:184 scheduled.php:149
-msgid "December"
 msgstr ""
 
 #: includes/create/stop-campaign.php:49

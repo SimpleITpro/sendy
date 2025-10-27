@@ -235,7 +235,7 @@
 	}
 	//Email tag
 	$link = str_replace('[Email]', $email, $link);	
-	$link = str_replace('[Name]', $name, $link);	
+	$link = str_replace('[Name]', (string)$name, $link);
 	
 	//webversion and unsubscribe tags
 	if($ares_emails_id=='') //if link does not belong to an autoresponder campaign

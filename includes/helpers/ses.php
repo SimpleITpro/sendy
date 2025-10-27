@@ -537,6 +537,7 @@ class SimpleEmailService
 
 final class SimpleEmailServiceRequest
 {
+	private $_amz_date, $_date, $_region, $_method, $_headers, $_host, $_endpoint;
 	private $ses, $verb, $parameters = array();
 	public $response;
 

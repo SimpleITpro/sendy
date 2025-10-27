@@ -336,6 +336,7 @@
 					        , 'ca-central-1' => 'Canada'
 					        , 'eu-west-1' => 'Ireland'
 					        , 'eu-central-1' => 'Frankfurt'
+					        , 'eu-central-2' => 'Zurich'
 					        , 'eu-west-2' => 'London'
 					        , 'eu-south-1' => 'Milan'
 					        , 'eu-west-3' => 'Paris'
@@ -347,7 +348,9 @@
 							, 'ap-northeast-3' => 'Osaka'
 					        , 'ap-northeast-2' => 'Seoul'
 					        , 'ap-south-1' => 'Mumbai'
+					        , 'ap-south-2' => 'Hyderabad'
 					        , 'me-south-1' => 'Bahrain'
+					        , 'me-central-1' => 'UAE'
 							, 'af-south-1' => 'Cape Town'
 					        , 'sa-east-1' => 'Sao Paulo'
 					        );

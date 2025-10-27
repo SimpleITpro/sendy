@@ -65,9 +65,8 @@
 	    }  
 	}
 	
-	$today = time();
-	
 	//Current date & time
+	$today = time();
 	if($user_timezone!='') date_default_timezone_set($user_timezone);
 	$time = round($today/60)*60;
 	$current_day = date("d", $time);
@@ -78,10 +77,12 @@
 	$current_time = strtotime($current_day.' '.$current_month.' '.$current_year.' '.$current_hour.$current_mins.'H');
 	
 	//convert date tags
+	$day_word = array(_('Sunday'), _('Monday'), _('Tuesday'), _('Wednesday'), _('Thursday'), _('Friday'), _('Saturday'));
+	$month_word = array('', _('January'), _('February'), _('March'), _('April'), _('May'), _('June'), _('July'), _('August'), _('September'), _('October'), _('November'), _('December'));
 	$currentdaynumber = date('d', $today);
-	$currentday = date('l', $today);
+	$currentday = $day_word[date('w', $today)];
 	$currentmonthnumber = date('m', $today);
-	$currentmonth = date('F', $today);
+	$currentmonth = $currentmonthnumber==10 ? $month_word[$currentmonthnumber] : $month_word[str_replace('0', '', $currentmonthnumber)];
 	$currentyear = date('Y', $today);
 	$unconverted_date = array('[currentdaynumber]', '[currentday]', '[currentmonthnumber]', '[currentmonth]', '[currentyear]');
 	$converted_date = array($currentdaynumber, $currentday, $currentmonthnumber, $currentmonth, $currentyear);

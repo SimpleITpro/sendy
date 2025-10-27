@@ -376,11 +376,21 @@
 		$ip2 = ', "'.$ipaddress.'"';
 		
 		if($recaptcha_secretkey!='')
-		{
+		{	
 			//reCAPTCHA verification
 			$captcha=$_POST['g-recaptcha-response'];
 			$secretkey = $recaptcha_secretkey;					
-			$response=file_get_contents_curl("https://www.google.com/recaptcha/api/siteverify?secret=".$secretkey."&response=".$captcha."&remoteip=".$ipaddress);
+			
+			// rebuild URL (Thanks John Vilaikeo)
+			$verify_url = "https://www.google.com/recaptcha/api/siteverify";
+			$query_data = http_build_query([
+			'secret'   => $secretkey,
+			'response' => $captcha,
+			'remoteip' => $ipaddress
+			]);
+			
+			$response = file_get_contents_curl("{$verify_url}?{$query_data}");
+			
 			$responseKeys = json_decode($response,true);
 			if(intval($responseKeys["success"]) !== 1) 
 			{
