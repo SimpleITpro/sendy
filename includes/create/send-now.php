@@ -696,7 +696,7 @@ if ($r && mysqli_num_rows($r) > 0)
 		$mail->AddAddress($email, $name);
 		$mail->AddReplyTo($reply_to, $from_name);
 		$mail->AddCustomHeader('List-Unsubscribe-Post: List-Unsubscribe=One-Click');
-		$mail->AddCustomHeader('List-Unsubscribe: <'.APP_PATH.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($subscriber_list).'/'.encrypt_val($campaign_id).'>, <mailto:'.$from_email.'?subject=Unsubscribe>');
+		$mail->AddCustomHeader('List-Unsubscribe: <'.APP_PATH.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($subscriber_list).'/'.encrypt_val($campaign_id).'>');
 		$mail->AddCustomHeader('Precedence: Bulk');
 		//check if attachments are available for this campaign to attach
 		if(file_exists('../../uploads/attachments/'.$campaign_id))

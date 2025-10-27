@@ -200,7 +200,7 @@ for($i=0;$i<count($test_email_array);$i++)
 	$mail->AddAddress($test_email_array[$i], '');
 	$mail->AddReplyTo($reply_to, $from_name);
 	$mail->AddCustomHeader('List-Unsubscribe-Post: List-Unsubscribe=One-Click');
-	$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe-success.php?c='.$campaign_id.'>, <mailto:'.$from_email.'?subject=Unsubscribe>');
+	$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe-success.php?c='.$campaign_id.'>');
 	if(file_exists('../../uploads/attachments/'.$ar.$campaign_id))
 	{
 		foreach(glob('../../uploads/attachments/'.$ar.$campaign_id.'/*') as $attachment)

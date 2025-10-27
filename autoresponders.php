@@ -590,7 +590,7 @@
 							$mail->AddAddress($email, $name);
 							$mail->AddReplyTo($reply_to, $from_name);
 							$mail->AddCustomHeader('List-Unsubscribe-Post: List-Unsubscribe=One-Click');
-							$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($list).'/'.encrypt_val($ares_id).'/a>, <mailto:'.$from_email.'?subject=Unsubscribe>');
+							$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($list).'/'.encrypt_val($ares_id).'/a>');
 							$server_path_array = explode('autoresponders.php', $_SERVER['SCRIPT_FILENAME']);
 						    $server_path = $server_path_array[0];
 							if(file_exists($server_path.'uploads/attachments/a'.$ares_id))
@@ -1147,7 +1147,7 @@
 										$mail->AddAddress($email, $name);
 										$mail->AddReplyTo($reply_to, $from_name);
 										$mail->AddCustomHeader('List-Unsubscribe-Post: List-Unsubscribe=One-Click');
-										$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($list).'/'.encrypt_val($ares_id).'/a>, <mailto:'.$from_email.'?subject=Unsubscribe>');
+										$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($list).'/'.encrypt_val($ares_id).'/a>');
 										$server_path_array = explode('autoresponders.php', $_SERVER['SCRIPT_FILENAME']);
 									    $server_path = $server_path_array[0];
 										if(file_exists($server_path.'uploads/attachments/a'.$ares_id))
@@ -1708,7 +1708,7 @@
 										$mail->AddAddress($email, $name);
 										$mail->AddReplyTo($reply_to, $from_name);
 										$mail->AddCustomHeader('List-Unsubscribe-Post: List-Unsubscribe=One-Click');
-										$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($list).'/'.encrypt_val($ares_id).'/a>, <mailto:'.$from_email.'?subject=Unsubscribe>');
+										$mail->AddCustomHeader('List-Unsubscribe: <'.$app_path.'/unsubscribe/'.encrypt_val($email).'/'.encrypt_val($list).'/'.encrypt_val($ares_id).'/a>');
 										$server_path_array = explode('autoresponders.php', $_SERVER['SCRIPT_FILENAME']);
 									    $server_path = $server_path_array[0];
 										if(file_exists($server_path.'uploads/attachments/a'.$ares_id))
